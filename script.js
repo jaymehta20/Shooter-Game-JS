@@ -16,8 +16,8 @@ terminateBtn.addEventListener("click", refershPage);
 
 let playerOne = 100; //health
 let playerTwo = 100;
-let playerOneDefaultScore = 0; // round won
-let playerTwoDefaultScore = 0;
+let playerOneRoundScore = 0; // round won
+let playerTwoRoundScore = 0;
 
 let round = 1;
 
@@ -54,22 +54,25 @@ attackPlayerTwo.addEventListener("click", attackPlayerTwoResult);
 
 const Score = () => {
   if (playerOne > playerTwo) {
-    playerOneDefaultScore++;
-    playerOneScore.innerHTML = playerOneDefaultScore;
+    playerOneRoundScore++;
+    playerOneScore.innerHTML = playerOneRoundScore;
   } else {
-    playerTwoDefaultScore++;
-    playerTwoScore.innerHTML = playerTwoDefaultScore;
+    playerTwoRoundScore++;
+    playerTwoScore.innerHTML = playerTwoRoundScore;
   }
 };
 
 const Result = () => {
-  if (playerOneDefaultScore > playerTwoDefaultScore) {
+  if (playerOneRoundScore > playerTwoRoundScore) {
     result.innerHTML = "Player 1 won";
-  } else {
+  }
+  if (playerOneRoundScore < playerTwoRoundScore) {
     result.innerHTML = "Player 2 won";
   }
+  if (playerOneRoundScore === playerTwoRoundScore) {
+    result.innerHTML = "It's a tie :)";
+  }
 };
-console.log(round);
 
 const toggleVisible = () => {
   heroContent.classList.add("visible");
