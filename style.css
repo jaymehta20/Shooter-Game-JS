@@ -1,0 +1,95 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  max-width: 60rem;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 32px;
+}
+
+.visible {
+  display: none;
+}
+
+.hero {
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.start-game {
+  background: #995aff;
+  color: white;
+  cursor: pointer;
+}
+
+.current-btn {
+  background: #ffdc62;
+}
+
+.terminate-btn {
+  background: #ff6565;
+  color: white;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.health-info {
+  background: #8186ff;
+  color: white;
+}
+
+.attack-btn {
+  background: #3b274f;
+  color: white;
+  cursor: pointer;
+}
+
+.round-info {
+  display: grid;
+  place-content: center;
+  margin-top: 2rem;
+}
+.player-info {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.player-card {
+  background-color: aliceblue;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+}
+
+.player-content {
+  display: flex;
+  gap: 2rem;
+}
+
+.vs-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.result-section {
+  margin-top: 3.5rem;
+}
+
+.result-section p {
+  font-size: 1.5rem;
+}

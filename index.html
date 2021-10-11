@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Inkoop Assingment</title>
+</head>
+
+<body>
+    <main class='hero'>
+        <div class="hero-content">
+            <h1>Shooter Game</h1>
+            <p>Players can shoot at each other with a random power (0-5) which will reduce the opponent's health.
+                The Player whose health reaches 0, dies and the game ends.</p>
+            <button class='start-game'>Play Game</button>
+        </div>
+
+    </main>
+    <section class="home visible">
+        <div class="round-info">
+            <button class="current-btn">Current Round <span class="current-round">1</span></button>
+            <button class="terminate-btn">Terminate</button>
+            <h4>Play 3 rounds to get the results</h4>
+        </div>
+        <div class="player-info">
+            <div class="player-content">
+
+                <div class="player1-info">
+                    <div class="player-card">
+                        <h3>Player 1</h3>
+                        <p>Round Won: <span class="playerOne-score">0</span></p>
+                        <button class="health-info health-one">100</button>
+                        <button class="attack-btn attack-playerTwo">Attack on Player 2</button>
+                    </div>
+
+                </div>
+                <div>
+                    <p class="vs-text">VS</p>
+                </div>
+                <div class="player2-info">
+                    <div class="player-card">
+                        <h3>Player 2</h3>
+                        <p>Round Won: <span class="playerTwo-score">0</span></p>
+                        <button class="health-info health-two">100</button>
+                        <button class="attack-btn attack-playerOne">Attack on Player 1</button>
+                    </div>
+                </div>
+            </div>
+            <div class="result-section">
+                <p>Result: <span class="result">To be determined</span></p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
