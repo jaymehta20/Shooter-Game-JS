@@ -1,6 +1,6 @@
 const startBtn = document.querySelector(".start-game");
-const visible = document.querySelector(".home");
-const heroContent = document.querySelector(".hero-content");
+const playground = document.querySelector(".playground");
+const hero = document.querySelector(".hero");
 const healthInfoPlayerOne = document.querySelector(".health-one");
 const healthInfoPlayerTwo = document.querySelector(".health-two");
 const result = document.querySelector(".result");
@@ -11,8 +11,8 @@ const attackPlayerOne = document.querySelector(".attack-playerOne");
 const attackPlayerTwo = document.querySelector(".attack-playerTwo");
 const terminateBtn = document.querySelector(".terminate-btn");
 
-const refershPage = () => window.location.reload();
-terminateBtn.addEventListener("click", refershPage);
+const refreshPage = () => window.location.reload();
+terminateBtn.addEventListener("click", refreshPage);
 
 let playerOne = 100; //health
 let playerTwo = 100;
@@ -75,7 +75,7 @@ const Result = () => {
 };
 
 const toggleVisible = () => {
-  heroContent.classList.add("visible");
-  visible.classList.remove("visible");
+  hero.classList.add("visible");
+  playground.classList.remove("visible");
 };
 startBtn.addEventListener("click", toggleVisible);

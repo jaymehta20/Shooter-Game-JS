@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Inkoop Assingment</title>
 </head>
@@ -15,22 +17,21 @@
                 The Player whose health reaches 0, dies and the game ends.</p>
             <button class='start-game'>Play Game</button>
         </div>
-
     </main>
-    <section class="home visible">
+    <section class="playground visible">
         <div class="round-info">
-            <button class="current-btn">Current Round <span class="current-round">1</span></button>
+            <h2>Current Round <span class="current-round">1</span></h2>
             <button class="terminate-btn">Terminate</button>
-            <h4>Play 3 rounds to get the results</h4>
+            <p class="info-text">Play 3 rounds to get the results</p>
         </div>
         <div class="player-info">
             <div class="player-content">
 
                 <div class="player1-info">
                     <div class="player-card">
-                        <h3>Player 1</h3>
+                        <h4>Player 1</h4>
                         <p>Round Won: <span class="playerOne-score">0</span></p>
-                        <button class="health-info health-one">100</button>
+                        <div class="health-info health-one">100</div>
                         <button class="attack-btn attack-playerTwo">Attack on Player 2</button>
                     </div>
 
@@ -40,9 +41,9 @@
                 </div>
                 <div class="player2-info">
                     <div class="player-card">
-                        <h3>Player 2</h3>
+                        <h4>Player 2</h4>
                         <p>Round Won: <span class="playerTwo-score">0</span></p>
-                        <button class="health-info health-two">100</button>
+                        <div class="health-info health-two">100</div>
                         <button class="attack-btn attack-playerOne">Attack on Player 1</button>
                     </div>
                 </div>
